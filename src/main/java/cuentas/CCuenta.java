@@ -106,7 +106,7 @@ public class CCuenta {
 /** Método que permite consultar el saldo, ingresar y retirar dinero de la cuenta bancaria.
  * @param retiro Parámetro de tipo double que representa la cantidad de dinero a retirar.
  * @param ingreso Parámetro de tipo double que representa la cantidad de dinero a ingresar.
- * @param cantidad Parámetro de tipo float.
+ * @param cantidad Parámetro de tipo float que representa el nuevo tipo de interés.
  */    
     public void operativa_cuenta(double retiro, double ingreso, float cantidad) {
             
@@ -126,5 +126,7 @@ public class CCuenta {
             } catch (Exception e) {
                 System.out.print("Fallo al ingresar");
             }
+            
+            this.setTipoInterés(cantidad);
     }
 }
