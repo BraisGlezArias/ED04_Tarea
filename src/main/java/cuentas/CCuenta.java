@@ -7,11 +7,17 @@ package cuentas;
 
 public class CCuenta {
 
-/** Atributos de la clase CCuenta.
+/** Atributo que define el nombre del propietario de la cuenta.
  */
     private String nombre;
+/** Atributo que define el número IBAN de la cuenta.
+ */
     private String cuenta;
+/** Atributo que define la cantidad de dinero presente en la cuenta.
+ */
     private double saldo;
+/** Atributo que define el porcentaje de tipo de interés que tiene la cuenta.
+ */
     private double tipoInterés;
 
 /** Constructor vacío para la clase CCuenta.
